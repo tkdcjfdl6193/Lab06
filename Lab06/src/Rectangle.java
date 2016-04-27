@@ -37,6 +37,14 @@ public class Rectangle
 	// programmer A
 	public void drawRectangle()
 	{
+		System.out.println("+----+");
+		System.out.println("|----|");
+		System.out.println("|----|");
+		System.out.println("|----|");
+		System.out.println("|----|");
+		System.out.println("|----|");
+		System.out.println("|----|");
+		System.out.println("|----|");
 		
 	}
 	
