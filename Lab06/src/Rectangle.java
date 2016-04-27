@@ -44,7 +44,7 @@ public class Rectangle extends Shape
 		System.out.println("|----|");
 		System.out.println("|----|");
 		System.out.println("|----|");
-		System.out.println("|----|");
+		System.out.println("+----+");
 		
 	}
 	
