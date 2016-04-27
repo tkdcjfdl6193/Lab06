@@ -5,7 +5,7 @@ public class Rectangle
 	private double height =8;
 	
 	
-	public void Rectangle(double width, double height)
+	public Rectangle(double width, double height)
 	{
 		
 		width = this.width;
