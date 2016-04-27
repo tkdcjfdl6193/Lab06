@@ -1,5 +1,5 @@
 
-public class Circle {
+public class Circle extends Shape{
 
 	private double radius;
 
@@ -16,16 +16,22 @@ public class Circle {
 			this.radius = radius;
 	}
 	
-	//@Override
+	@Override
 	public double calculateArea(){
 		
 		return 3.14*radius*radius;
 		
 	}
 	
-	//@Override
+	@Override
 	public double calculatePerimeter(){
 		return 2*radius*3.14;
+	}
+
+	@Override
+	public void printInfo() {
+		// TODO Auto-generated method stub
+		
 	}
 
 }

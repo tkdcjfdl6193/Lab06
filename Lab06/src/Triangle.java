@@ -38,15 +38,21 @@ public class Triangle extends Shape {
 			this.side3 = side3;
 	}
 	
-	//@Override
+	@Override
 	public double calculatePerimeter(){
 		return side1+side2+side3;
 	}
 	
-	//@Override
+	@Override
 	public double calculateArea(){
 		double temp = (side1+side2+side3)/2;
 		return Math.sqrt((temp*(temp-side1)*(temp-side2)*(temp-side3)));
+	}
+
+	@Override
+	public void printInfo() {
+		// TODO Auto-generated method stub
+		
 	}
 
 }
