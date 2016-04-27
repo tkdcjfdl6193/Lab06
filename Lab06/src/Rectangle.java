@@ -12,6 +12,7 @@ public class Rectangle
 		height = this.height;
 	}
 	
+	@Override
 	public double calculateArea()
 	{
 		double area;
@@ -21,8 +22,10 @@ public class Rectangle
 		return area;
 	}
 	
+	@Override
 	public double calculatePerimeter()
 	{
+		
 		double perimeter;
 		
 		perimeter = 2*width + 2*height;
@@ -30,10 +33,17 @@ public class Rectangle
 		return perimeter;
 	}
 	
+	// programmer A
+	public void drawRectangle()
+	{
+		
+	}
 	
-	// empty
+	@Override
+	// leader
 	public void printInfo()
 	{
+	
 		
 	}
 	
