@@ -1,6 +1,6 @@
 
 
-public class Rectangle
+public class Rectangle extends Shape
 {
 	private double width = 6;
 	private double height =8;
@@ -13,7 +13,7 @@ public class Rectangle
 		height = this.height;
 	}
 	
-	//@Override
+	@Override
 	public double calculateArea()
 	{
 		double area;
@@ -23,7 +23,7 @@ public class Rectangle
 		return area;
 	}
 	
-	//@Override
+	@Override
 	public double calculatePerimeter()
 	{
 		
@@ -48,7 +48,7 @@ public class Rectangle
 		
 	}
 	
-	//@Override
+	@Override
 	// leader
 	public void printInfo()
 	{
