@@ -2,13 +2,14 @@
 
 public class Rectangle extends Shape
 {
-	private double width = 6;
-	private double height =8;
+	
+	private double width;
+	private double height;
 	
 	
 	public Rectangle(double width, double height)
 	{
-		
+		setId(3);
 		width = this.width;
 		height = this.height;
 	}

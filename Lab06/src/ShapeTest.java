@@ -5,7 +5,7 @@ public class ShapeTest
 	
 	public void start()
 	{
-		double width=0, height=0, radius=0, sideA=0, sideB=0, sideC = 0;
+		double width=6, height=8, radius=5.000000, sideA=3.000000, sideB=3.000000, sideC = 5.000000;
 		
 		Shape[] shape = new Shape[3];
 		shape[0] = new Rectangle(width, height);
