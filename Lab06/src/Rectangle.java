@@ -1,3 +1,4 @@
+import java.util.concurrent.SynchronousQueue;
 
 public class Rectangle extends Shape
 {
@@ -9,8 +10,14 @@ public class Rectangle extends Shape
 	public Rectangle(double width, double height)
 	{
 		setId(3);
+		if( width > 0 )
 		width = this.width;
+		else
+			System.out.println("error");
+		if( height > 0)
 		height = this.height;
+		else
+			System.out.println("error");
 	}
 	
 	@Override
