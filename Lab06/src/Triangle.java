@@ -7,9 +7,12 @@ public class Triangle extends Shape {
 
 	public Triangle(double sideA, double sideB, double sideC) {
 		setId(1);
-		side1 = sideA;
-		side2 = sideB;
-		side3 = sideC;
+		if (sideA > 0)
+			side1 = sideA;
+		if (sideB > 0)
+			side2 = sideB;
+		if (sideC > 0)
+			side3 = sideC;
 	}
 
 	public double getSide1() {
@@ -38,25 +41,25 @@ public class Triangle extends Shape {
 		if (side3 > 0)
 			this.side3 = side3;
 	}
-	
+
 	@Override
-	public double calculatePerimeter(){
-		return side1+side2+side3;
+	public double calculatePerimeter() {
+		return side1 + side2 + side3;
 	}
-	
+
 	@Override
-	public double calculateArea(){
-		double temp = (side1+side2+side3)/2;
-		return Math.sqrt((temp*(temp-side1)*(temp-side2)*(temp-side3)));
+	public double calculateArea() {
+		double temp = (side1 + side2 + side3) / 2;
+		return Math.sqrt((temp * (temp - side1) * (temp - side2) * (temp - side3)));
 	}
 
 	@Override
 	public void printInfo() {
-		System.out.println("Shape ID : "+id);
-		System.out.println("The length of the each side of the triangle :"+side1+","+side2+","+side3);
+		System.out.println("Shape ID : " + id);
+		System.out.println("The length of the each side of the triangle :" + side1 + "," + side2 + "," + side3);
 		System.out.println("Perimeter's length of the triangle : " + calculatePerimeter());
-		System.out.println("Area of the of the triangle" + calculateArea()+"\n");
-		
+		System.out.println("Area of the of the triangle" + calculateArea() + "\n");
+
 	}
 
 }

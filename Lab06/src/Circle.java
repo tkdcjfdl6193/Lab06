@@ -1,11 +1,12 @@
 
-public class Circle extends Shape{
+public class Circle extends Shape {
 
 	private double radius;
 
 	public Circle(double ra) {
 		setId(2);
-		setRadius(ra);
+		if (ra > 0)
+			setRadius(ra);
 	}
 
 	public double getRadius() {
@@ -16,26 +17,26 @@ public class Circle extends Shape{
 		if (radius > 0)
 			this.radius = radius;
 	}
-	
+
 	@Override
-	public double calculateArea(){
-		
-		return 3.14*radius*radius;
-		
+	public double calculateArea() {
+
+		return 3.14 * radius * radius;
+
 	}
-	
+
 	@Override
-	public double calculatePerimeter(){
-		return 2*radius*3.14;
+	public double calculatePerimeter() {
+		return 2 * radius * 3.14;
 	}
 
 	@Override
 	public void printInfo() {
-		System.out.println("Shape ID : "+id);
-		System.out.println("The radius of the circle : "+radius);
-		System.out.println("The perimether's length of the circle : "+calculatePerimeter());
-		System.out.println("TheArea of the of the circle : "+calculateArea()+"\n");
-		
+		System.out.println("Shape ID : " + id);
+		System.out.println("The radius of the circle : " + radius);
+		System.out.println("The perimether's length of the circle : " + calculatePerimeter());
+		System.out.println("TheArea of the of the circle : " + calculateArea() + "\n");
+
 	}
 
 }
