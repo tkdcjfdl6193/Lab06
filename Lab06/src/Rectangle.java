@@ -52,7 +52,9 @@ public class Rectangle extends Shape
 	// leader
 	public void printInfo()
 	{
-	
-		
+		System.out.println("Shape ID : "+id);
+		System.out.println("Rectangle's width and height : "+width+","+height);
+		System.out.println("Perimeter's length of the rectangle : " + calculatePerimeter());
+		System.out.println("Area of the of the rectangle" + calculateArea());
 	}
 }
