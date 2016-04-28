@@ -1,6 +1,6 @@
 
 
-public class Rectangle extends Shape
+public class Rectangle 
 {
 	private double width = 6;
 	private double height =8;
@@ -13,7 +13,7 @@ public class Rectangle extends Shape
 		height = this.height;
 	}
 	
-	@Override
+	//@Override
 	public double calculateArea()
 	{
 		double area;
@@ -23,7 +23,7 @@ public class Rectangle extends Shape
 		return area;
 	}
 	
-	@Override
+	//@Override
 	public double calculatePerimeter()
 	{
 		
@@ -37,18 +37,10 @@ public class Rectangle extends Shape
 	// programmer A
 	public void drawRectangle()
 	{
-		System.out.println("+----+");
-		System.out.println("|----|");
-		System.out.println("|----|");
-		System.out.println("|----|");
-		System.out.println("|----|");
-		System.out.println("|----|");
-		System.out.println("|----|");
-		System.out.println("+----+");
 		
 	}
 	
-	@Override
+	//@Override
 	// leader
 	public void printInfo()
 	{

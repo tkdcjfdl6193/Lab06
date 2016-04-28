@@ -51,7 +51,10 @@ public class Triangle extends Shape {
 
 	@Override
 	public void printInfo() {
-		// TODO Auto-generated method stub
+		System.out.println("Shape ID : "+id);
+		System.out.println("The length of the each side of the triangle :"+side1+","+side2+","+side3);
+		System.out.println("Perimeter's length of the triangle : " + calculatePerimeter());
+		System.out.println("Area of the of the triangle" + calculateArea());
 		
 	}
 

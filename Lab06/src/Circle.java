@@ -30,7 +30,10 @@ public class Circle extends Shape{
 
 	@Override
 	public void printInfo() {
-		// TODO Auto-generated method stub
+		System.out.println("Shape ID : "+id);
+		System.out.println("The radius of the circle : "+radius);
+		System.out.println("The perimether's length of the circle : "+calculatePerimeter());
+		System.out.println("TheArea of the of the circle : "+calculateArea());
 		
 	}
 
