@@ -6,6 +6,7 @@ public class Triangle extends Shape {
 	private double side3;
 
 	public Triangle(double sideA, double sideB, double sideC) {
+		setId(1);
 		side1 = sideA;
 		side2 = sideB;
 		side3 = sideC;
@@ -54,7 +55,7 @@ public class Triangle extends Shape {
 		System.out.println("Shape ID : "+id);
 		System.out.println("The length of the each side of the triangle :"+side1+","+side2+","+side3);
 		System.out.println("Perimeter's length of the triangle : " + calculatePerimeter());
-		System.out.println("Area of the of the triangle" + calculateArea());
+		System.out.println("Area of the of the triangle" + calculateArea()+"\n");
 		
 	}
 

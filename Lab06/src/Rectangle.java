@@ -55,6 +55,6 @@ public class Rectangle extends Shape
 		System.out.println("Shape ID : "+id);
 		System.out.println("Rectangle's width and height : "+width+","+height);
 		System.out.println("Perimeter's length of the rectangle : " + calculatePerimeter());
-		System.out.println("Area of the of the rectangle" + calculateArea());
+		System.out.println("Area of the of the rectangle" + calculateArea()+"\n");
 	}
 }

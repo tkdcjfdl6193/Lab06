@@ -4,7 +4,8 @@ public class Circle extends Shape{
 	private double radius;
 
 	public Circle(double ra) {
-		radius = ra;
+		setId(2);
+		setRadius(ra);
 	}
 
 	public double getRadius() {
@@ -33,7 +34,7 @@ public class Circle extends Shape{
 		System.out.println("Shape ID : "+id);
 		System.out.println("The radius of the circle : "+radius);
 		System.out.println("The perimether's length of the circle : "+calculatePerimeter());
-		System.out.println("TheArea of the of the circle : "+calculateArea());
+		System.out.println("TheArea of the of the circle : "+calculateArea()+"\n");
 		
 	}
 
